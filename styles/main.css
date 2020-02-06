@@ -51,6 +51,10 @@ h1 {
   .carousel__btn_prev {
     background: url(../images/slider-btn/prev-btn.png); }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 body {
   font-family: Lato, sans-serif;
   margin: 0 auto;
@@ -75,5 +79,25 @@ body {
   overflow: hidden; }
   .carousel__item {
     position: relative; }
+  .carousel__dots-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 190px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%); }
+  .carousel__dot {
+    margin: 3px;
+    width: 15px;
+    height: 15px;
+    background-color: #bbb9b9;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .carousel__dot_active {
+      background-color: #8a8989; }
 
 /*# sourceMappingURL=main.css.map */
